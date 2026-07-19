@@ -39,9 +39,8 @@ function addDigit(digit) {
 }
 
 function checkAndAdd(digit) {
+    const lastDigit = input.value.slice(- 1);
 
-    if (digit >= 0 && digit)
-        const lastDigit = input.value.slice(-1);
     if (operators.includes(lastDigit)) {
         deleteNumber();
         addDigit(digit);
